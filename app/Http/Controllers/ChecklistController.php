@@ -22,7 +22,7 @@ class ChecklistController extends Controller
 
         Checklist::create($validatedData);
         $checklist = Checklist::all();
-        return ChecklistResource::collection($checklist);
+        return response()->json('berhasil ditambahkan');
 
     }
 
